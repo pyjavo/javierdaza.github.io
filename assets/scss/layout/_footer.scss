@@ -13,6 +13,10 @@
 	padding-bottom: 50px; 
 }
 
+#footer a:hover img{
+	opacity: 1;
+}
+
 #footer p {
 	color: white;
 }
@@ -21,4 +25,25 @@
 	color: white;
 	text-transform: uppercase;
 	padding-bottom: 20px;
+}
+
+.copyright-disclaimer p{
+	font-size: 14px;
+	margin-top: -0.4rem;
+}
+
+.github-logo{
+	display: inline-block;
+    height: 30px;
+    top: 8px;
+    margin-left: 5px;
+    margin-top: -1.9rem;
+    opacity: .8;
+    padding: 1px;
+    position: relative;
+     -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    width: 100px;
 }
