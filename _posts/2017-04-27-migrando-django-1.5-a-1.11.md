@@ -1,7 +1,7 @@
 ---
 title: "Tips para migrar tu aplicación de Django 1.5 a 1.11"
 date:  2017-04-27 17:05:36
-image: migrando_django_1.5_a_1.11.jpeg
+image: migrando_django_1.5_a_1.11.jpg
 ---
 
 En este artículo subiré las diapositivas de mi [última charla en Python Barranquilla](https://www.meetup.com/pythonbaq/events/239118352/) donde hablé sobre como migrar aplicaciones de Django.
