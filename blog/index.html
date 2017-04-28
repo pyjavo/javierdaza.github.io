@@ -11,7 +11,13 @@ title: Blog
 					<p><bd>{{ post.date | date: "%b %-d, %Y" }}</bd></p>
 					<h4>{{ post.title }}</h4>
 					{% if post.image %}
-					<p><img class="img-responsive post-img" src="/assets/img/posts/{{ post.image }}" alt=""></p>
+					<p>
+						<a href="{{ post.url | prepend: site.baseurl }}">
+						<figure>
+							<img class="img-responsive post-img" src="/assets/img/posts/{{ post.image }}" alt="">
+						</figure>
+						</a>
+					</p>
 					{% endif %}
 					{{ post.excerpt }}
 					<p><a href="{{ post.url | prepend: site.baseurl }}">Seguir leyendo...</a></p>

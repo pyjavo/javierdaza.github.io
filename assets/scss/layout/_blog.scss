@@ -42,3 +42,19 @@ bt {
 .post-img{
 	width: 100%;
 }
+#grey figure{
+	overflow: hidden;
+	border: none;
+}
+
+#grey .post-img{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#grey .post-img:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
