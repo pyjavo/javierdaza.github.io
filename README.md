@@ -24,6 +24,10 @@ Generar los archivos de CSS automaticamente:
 $ sass --watch assets/scss:assets/css --style compressed
 ```
 
+#### Cambiar usuario en script de Github
+
+Cambiar el username en GitHubActivity dentro de `js/assets/about_me_eng.js`
+
 #### Documentacion
 * [Jekyll basico]
 * [SASS basico]

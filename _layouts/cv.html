@@ -38,16 +38,16 @@
                 <h2 class="desc">Desarrollador de Web Apps</h2>   
                 <ul class="social list-inline">
                     <li>
-                        <a href="https://twitter.com/javidazac"><i class="fa fa-twitter"></i></a>
+                        <a href="https://twitter.com/{{ site.my_username }}"><i class="fa fa-twitter"></i></a>
                     </li>                   
                     <li>
-                        <a href="http://stackoverflow.com/users/2142093/javidazac"><i class="fa fa-stack-overflow"></i></a>
+                        <a href="http://stackoverflow.com/users/2142093"><i class="fa fa-stack-overflow"></i></a>
                     </li>
                     <li>
                         <a href="https://co.linkedin.com/in/javierdazaco"><i class="fa fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="https://github.com/javierdaza"><i class="fa fa-github-alt"></i></a>
+                        <a href="https://github.com/{{ site.my_username }}"><i class="fa fa-github-alt"></i></a>
                     </li>               
                 </ul> 
             </div>
@@ -127,13 +127,13 @@
                             </div>
 
                             <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/PyBAQ/vanzare" target="_blank">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/{{ site.my_username }}/vanzare" target="_blank">
                                 <img class="img-responsive project-image" src="/assets/img/about_me_eng/projects/vanzare.png" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://github.com/PyBAQ/vanzare" target="_blank">Vanzare - Punto de Venta</a><span class="label label-theme">Open Source</span></h3>
+                                    <h3 class="title"><a href="https://github.com/{{ site.my_username }}/vanzare" target="_blank">Vanzare - Punto de Venta</a><span class="label label-theme">Open Source</span></h3>
                                     <p>Aplicación en Python y Django para una pequeña agencia de publicidad. Realiza reportes diarios y mensuales, maneja una base de datos de clientes, gastos, productos y cierres de caja. </p>
-                                    <p><a class="more-link" href="https://github.com/PyBAQ/vanzare" target="_blank"><i class="fa fa-external-link"></i> Más información</a></p>
+                                    <p><a class="more-link" href="https://github.com/{{ site.my_username }}/vanzare" target="_blank"><i class="fa fa-external-link"></i> Más información</a></p>
                                 </div>                        
                             </div>
                             
@@ -197,7 +197,11 @@
                 </section>
                 <section class="github section">
                     <div class="section-inner">
-                        <h2 class="heading">Mi GitHub</h2>                       
+                        <h2 class="heading">Mi GitHub</h2>
+
+                        <div id="github-graph" class="github-graph">
+                        </div>
+
                         <div id="ghfeed" class="ghfeed">
                         </div><!--//ghfeed-->
                         
@@ -280,7 +284,7 @@
                                     </div><!--//level-bar-->
                                 </div><!--//item-->
                                 
-                                <p><a class="more-link" href="http://stackoverflow.com/users/2142093/javidazac?tab=profile"><i class="fa fa-external-link"></i> Más en Stackoverflow</a></p> 
+                                <p><a class="more-link" href="http://stackoverflow.com/users/2142093/{{ site.my_username }}?tab=profile"><i class="fa fa-external-link"></i> Más en Stackoverflow</a></p> 
                             </div>              
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 

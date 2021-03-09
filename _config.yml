@@ -4,7 +4,7 @@ email: your-email@gmail.com
 description: La página personal y portafolio de Javier Daza, desarrollador web en Python y Django.
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://javierdaza.co" # the base hostname & protocol for your site
-twitter_username: xavidaza
+my_username: pyjavo
 paginate: 5
 paginate_path: "/blog/pagina:num/"
 
