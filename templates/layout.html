@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="/assets/img/favicon.ico">
+        <title>Javier Daza Comas - {% block title %}Desarrollador Web{% endblock %}</title>
+        <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+  <body>
+
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ '/'|url }}">Javier Daza</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/blog/">Blog</a></li>
+            <!-- <li><a href="/cursos/">Cursos</a></li>
+            <li><a href="/cv/">CV</a></li>
+            <li><a href="/en/">EN</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    {% block body %}{% endblock %}
+  
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <h4>Mi Ubicación</h4>
+                <p>
+                  Barranquilla, Colombia.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h4>Mis Cuentas</h4>
+                <p>
+                  <a href="https://stackoverflow.com/users/2142093">Stackoverflow</a><br/>
+                  <a href="https://github.com/{{ site.my_username }}">Github</a><br/>
+                  <a href="https://twitter.com/{{ site.my_username }}">Twitter</a><br/>
+                  <a href="https://co.linkedin.com/in/javierdazaco">LinkedIn</a>
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h4>Sobre Javier</h4>
+                <p>Emprendedor, desarrollador web, fundador de <a href="http://kizunaclub.com">Kizuna Club</a>, <a href="https://www.meetup.com/pythonbaq/">Python Barranquilla</a> y miembro de <a href="https://www.facebook.com/djangogirlscolombia">Django Girls Colombia.</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 copyright-disclaimer">
+                <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />Este sitio está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licencia de Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional</a>.</p>
+              </div>
+              <div class="col-lg-8 text-right">
+                Hospedado en <a href="https://github.com"><img class="github-logo" src="/assets/img/github-logo.png"></a>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/assets/js/hover.zoom.js"></script>
+    <script src="/assets/js/hover.zoom.conf.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    
+    <!-- {% if 'production' %} -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-79135478-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+    <!-- {% endif %} -->
+  
+  </body>
+</html>
